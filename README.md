@@ -25,7 +25,7 @@ You can find more details in README.md files of every service.
 ### How to start integration tests
 
 To start integration tests you can use designated maven goal `integration-test`.
-Integration tests are also run during `verufy` and `install` phases.
+Integration tests are also run during `verify` and `install` phases.
 
 
 
