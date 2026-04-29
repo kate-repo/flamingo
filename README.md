@@ -17,9 +17,8 @@ The project uses
 
 ### How to start
 
-To start Tic Tac Toe project please build all services with maven `mvn clean install` and start built applications `java -jar <service root dir>/target/<service name>.jar`.
+To start Tic Tac Toe project sequentially build all services with maven `mvn clean install` and start built applications `java -jar <service root dir>/target/<service name>.jar`.
 You can find more details in README.md files of every service.
-
 
 
 ### How to start integration tests
@@ -29,3 +28,9 @@ Integration tests are also run during `verify` and `install` phases.
 
 
 
+### UI access 
+
+UI web page opens automatically in default browser after Game Service UI is started.
+In case this doesn't happen go to [http://localhost:8083](http://localhost:8083)
+
+Enjoy!
