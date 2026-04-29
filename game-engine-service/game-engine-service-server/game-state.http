@@ -1,0 +1,22 @@
+### Send POST request to initialize a game
+POST http://localhost:8081/games
+Content-Type: application/json
+
+{
+  "id": "2414925f-13be-4b44-b287-9758234f405d",
+  "gameStatus": "IN_PROGRESS"
+}
+
+### Send POST request to make a move in a game
+POST http://localhost:8081/games/{{gameId}}/move
+Content-Type: application/json
+
+{
+  "boardPosition": "C1",
+  "playerSymbol": "O"
+}
+
+### Send GET request to fetch game details
+GET http://localhost:8081/games/{{gameId}}
+Content-Type: application/json
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.0.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.assignment.flamingo</groupId>
+    <artifactId>game-engine-service-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Game Engine Service Parent Pom</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>game-engine-service-api-client</module>
+        <module>game-engine-service-server</module>
+    </modules>
+
+    <properties>
+        <java.version>21</java.version>
+        <spring-cloud.version>2025.1.1</spring-cloud.version>
+    </properties>
+
+</project>

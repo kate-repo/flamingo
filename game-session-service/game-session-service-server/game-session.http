@@ -1,0 +1,15 @@
+### Send POST request to create game session
+POST http://localhost:8082/sessions
+Content-Type: application/json
+
+{}
+
+### Send POST request to simulate the game
+POST http://localhost:8082/sessions/{{sessionId}}/simulate
+Content-Type: application/json
+
+{}
+
+### Send GET request to fetch game session
+GET http://localhost:8082/sessions/{{sessionId}}
+Content-Type: application/json

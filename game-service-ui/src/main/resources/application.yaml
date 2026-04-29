@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+
+application:
+  api:
+    game-session-service-api-client:
+      baseurl: http://localhost:8082
+
+
+vaadin:
+  launch-browser: true
+  allowed-packages: com.vaadin,org.vaadin,com.flowingcode,com.assignment.flamingo
+
+
+logging:
+  level:
+    root: INFO
+#    org.springframework.web: DEBUG
