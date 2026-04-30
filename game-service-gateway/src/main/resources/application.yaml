@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+spring:
+  application:
+    name: game-service-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+      routes[0]:
+        id: game-engine-service
+        url: lb://GAME-ENGINE-SERVICE
+        predicates[0]: Path=/app1/**
+      routes[1]:
+        id: game-session-service
+        url: lb://GAME-SESSION-SERVICE
+        predicates[0]: Path=/app2/**
+      routes[2]:
+        id: game-service-ui
+        url: lb://GAME-SERVICE-UI
+        predicates[0]: Path=/app3/**
+
+
